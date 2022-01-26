@@ -65,7 +65,7 @@ contract TaskManager {
         index = tasks.push (taskAux) - 1;
         nTasks ++;
         myTasks[msg.sender].push(index);
-        //evisa quem está enviando
+        //avisa quem está enviando
         emit TaskAdded (msg.sender, _name, _phase, _priority);
     }
     
